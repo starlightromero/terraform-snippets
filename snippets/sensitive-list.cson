@@ -1,0 +1,11 @@
+".source.tf":
+  "Create a sensitive list":
+    "prefix": "sensitive-list"
+    "body": """
+  variable "${1}" {
+    description = "${2}"
+    default     = [${3:value1}, ${4:value2}]
+    type        = list
+    sensitive   = true
+  }${5}
+"""
