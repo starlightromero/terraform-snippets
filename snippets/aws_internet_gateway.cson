@@ -1,0 +1,12 @@
+".source.tf":
+  "Create an AWS Internet Gateway":
+    "prefix": "aws_internet_gateway"
+    "body": """
+  resource "aws_internet_gateway" "${1}" {
+    vpc_id       = ${2}  
+    
+  tags = {
+    Name = "${1}"
+  }
+  }${3}
+"""
