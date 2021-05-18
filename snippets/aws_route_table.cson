@@ -1,0 +1,17 @@
+".source.tf":
+  "Create an AWS Route Table":
+    "prefix": "aws_route_table"
+    "body": """
+  resource "aws_route_table" "${1}" {
+    vpc_id = ${2}
+    
+    route {
+      cidr_block = "${3}"
+      gateway_id = ${4}
+    }
+    
+    tags = {
+      Name = "${1}"
+    }
+  }${3}
+"""
