@@ -10,7 +10,7 @@
     "autocompletion",
     "provisioning"
   ],
-  "repository": "git+https://github.com/starlightromero/terraform-snippets.git",
+  "repository": "https://github.com/starlightromero/terraform-snippets.git",
   "author": "Starlight Romero",
   "license": "MIT",
   "engines": {
