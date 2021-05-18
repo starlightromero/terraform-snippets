@@ -1,0 +1,15 @@
+".source.tf":
+  "Create an AWS Instance":
+    "prefix": "aws_instance"
+    "body": """
+  resource "aws_instance" "${1}" {
+    ami               = "${2}"
+    instance_type     = "${3:t2.micro}"
+    availability_zone = ${4}
+    key_name          = ${5}
+    
+    tags = {
+      Name = "${1}"
+    }
+  }${6}
+"""
