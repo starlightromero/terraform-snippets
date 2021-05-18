@@ -1,0 +1,9 @@
+".source.tf":
+  "Create an AWS Route Table Association":
+    "prefix": "aws_route_table_association"
+    "body": """
+  resource "aws_route_table_association" "${1}" {  
+    subnet_id      = ${2}
+    route_table_id = ${3}
+  }${4}
+"""
