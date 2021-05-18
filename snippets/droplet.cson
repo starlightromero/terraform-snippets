@@ -1,0 +1,12 @@
+".source.tf":
+  "Create a Digital Ocean droplet":
+    "prefix": "droplet"
+    "body": """
+  resource "digitalocean_droplet" "${1:<NodeType>}" {
+    image     = "${4:ubuntu-20-04-x64}"
+    name      = "${1:<NodeType>}-${2:<ServiceName>}-${3:<Environment>}"
+    region    = "${5}"
+    size      = "${6:s-1vcpu-1gb}"
+    ssh_keys  = [${7}]
+  }${8}
+"""
