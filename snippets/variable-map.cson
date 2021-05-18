@@ -1,0 +1,13 @@
+".source.tf":
+  "Create a variable map":
+    "prefix": "variable-map"
+    "body": """
+  variable "${1}" {
+    description = "${2}"
+    default     = {
+      ${3:key1} = ${4:value1}
+      ${5:key2} = ${6:value2}
+    }
+    type        = map
+  }${7}
+"""
