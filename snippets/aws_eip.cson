@@ -1,0 +1,11 @@
+".source.tf":
+  "Create an AWS Elastic IP":
+    "prefix": "aws_eip"
+    "body": """
+  resource "aws_eip" "${1}" {
+    vpc                       = true 
+    network_interface         = ${2}
+    associate_with_private_ip = "${3}"
+    depends_on                = [${4}]
+  }${5}
+"""
