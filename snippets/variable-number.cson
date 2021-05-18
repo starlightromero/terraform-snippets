@@ -1,0 +1,10 @@
+".source.tf":
+  "Create a variable number":
+    "prefix": "variable-number"
+    "body": """
+  variable "${1}" {
+    description = "${2}"
+    default     = ${3}
+    type        = number
+  }${4}
+"""
