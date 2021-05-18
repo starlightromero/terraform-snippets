@@ -1,0 +1,12 @@
+".source.tf":
+  "Create a forwarding_rule":
+    "prefix": "forwarding_rule"
+    "body": """
+  forwarding_rule {
+    entry_port     = ${1}
+    entry_protocol = ${2}
+
+    target_port     = ${3}
+    target_protocol = ${4}
+  }${5}
+"""
