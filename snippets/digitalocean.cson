@@ -1,0 +1,8 @@
+".source.tf":
+  "Create a Digital Ocean provider":
+    "prefix": "digitalocean"
+    "body": """
+  provider "digitalocean" {
+    token = var.do_token
+  }${2}
+"""
