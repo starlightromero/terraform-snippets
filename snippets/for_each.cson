@@ -1,0 +1,8 @@
+".source.tf":
+  "Create a for_each":
+    "prefix": "for_each"
+    "body": """
+  for_each = {
+    ${1:<key>} = ${2:<value>}
+  }${3}
+"""
