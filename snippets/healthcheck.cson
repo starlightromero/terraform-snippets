@@ -1,0 +1,10 @@
+".source.tf":
+  "Create a healthcheck":
+    "prefix": "healthcheck"
+    "body": """
+  healthcheck {
+    path     = ${1}
+    port     = ${2}
+    protocol = ${3}
+  }${4}
+"""
