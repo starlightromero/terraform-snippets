@@ -1,0 +1,10 @@
+".source.tf":
+  "Create a variable string":
+    "prefix": "variable-string"
+    "body": """
+  variable "${1}" {
+    description = "${2}"
+    default     = "${3}"
+    type        = string
+  }${4}
+"""
