@@ -1,0 +1,12 @@
+".source.tf":
+  "Create an ingress":
+    "prefix": "ingress"
+    "body": """
+  ingress {  
+    description = "${1}"  
+    from_port   = ${2}
+    to_port     = ${3}
+    protocol    = "${4}"
+    cidr_blocks = ["${5}"]
+  }${6}
+"""
