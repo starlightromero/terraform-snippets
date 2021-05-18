@@ -1,0 +1,10 @@
+".source.tf":
+  "Create a variable list":
+    "prefix": "variable-list"
+    "body": """
+  variable "${1}" {
+    description = "${2}"
+    default     = [${3:value1}, ${4:value2}]
+    type        = list
+  }${5}
+"""
