@@ -1,0 +1,8 @@
+".source.tf":
+  "Create a provider":
+    "prefix": "provider"
+    "body": """
+  provider "${1}" {
+    ${2:<key>} = ${3:<value>}
+  }${4}
+"""
