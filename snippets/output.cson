@@ -1,0 +1,8 @@
+".source.tf":
+  "Create a output":
+    "prefix": "output"
+    "body": """
+  output "${1}" {
+    value = ${2}
+  }${3}
+"""
