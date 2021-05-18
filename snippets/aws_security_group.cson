@@ -1,0 +1,14 @@
+".source.tf":
+  "Create an AWS Security Group":
+    "prefix": "aws_security_group"
+    "body": """
+  resource "aws_security_group" "${1}" {  
+    name        = "${2}"
+    description = "${3}"
+    vpc_id      = ${4}
+    
+    tags = {
+      Name = "${1}"
+    }
+  }${5}
+"""
