@@ -1,0 +1,24 @@
+{
+  "name": "terraform-snippets",
+  "main": "./lib/terraform-snippets",
+  "version": "0.1.0",
+  "description": "terraform-snippets",
+  "keywords": [
+    "terraform",
+    "snippets",
+    "autocomplete",
+    "autocompletion",
+    "provisioning"
+  ],
+  "repository": "git+https://github.com/starlightromero/terraform-snippets.git",
+  "author": "Starlight Romero",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/starlightromero/terraform-snippets/issues"
+  },
+  "homepage": "https://github.com/starlightromero/terraform-snippets#readme"
+}
