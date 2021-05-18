@@ -1,0 +1,9 @@
+".source.tf":
+  "Create a network interface":
+    "prefix": "network_interface"
+    "body": """
+  network_interface {  
+    device_index         = ${2}
+    network_interface_id = ${3}
+  }${4}
+"""
