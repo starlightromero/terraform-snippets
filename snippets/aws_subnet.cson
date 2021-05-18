@@ -1,0 +1,14 @@
+".source.tf":
+  "Create an AWS Subnet":
+    "prefix": "aws_subnet"
+    "body": """
+  resource "aws_subnet" "${1}" {
+    vpc_id            = ${2}  
+    cidr_block        = "${3}"
+    availability_zone = ${4}
+
+    tags = {
+      Name = "${1}"
+    }
+  }${5}
+"""
