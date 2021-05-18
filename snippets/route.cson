@@ -1,0 +1,8 @@
+".source.tf":
+  "Create a route":
+    "prefix": "route"
+    "body": """
+  route {
+    ${1:key} = ${2:value} 
+  }${3}
+"""
