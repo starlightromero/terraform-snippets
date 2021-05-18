@@ -1,0 +1,12 @@
+".source.tf":
+  "Create an AWS VPC":
+    "prefix": "aws_vpc"
+    "body": """
+  resource "aws_vpc" "${1}" {
+    cidr_block = "${2}"
+
+    tags = {
+      Name = "${1}"
+    }
+  }${3}
+"""
