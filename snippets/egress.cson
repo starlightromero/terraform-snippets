@@ -1,0 +1,11 @@
+".source.tf":
+  "Create an egress":
+    "prefix": "egress"
+    "body": """
+  ingress {   
+    from_port   = ${1}
+    to_port     = ${2}
+    protocol    = "${3}"
+    cidr_blocks = ["${5}"]
+  }${6}
+"""
