@@ -1,0 +1,11 @@
+".source.tf":
+  "Create a sensitive variable":
+    "prefix": "sensitive"
+    "body": """
+  variable "${1}" {
+    description = ${2}
+    default     = ${3}
+    type        = ${4}
+    sensitive   = true
+  }${5}
+"""
