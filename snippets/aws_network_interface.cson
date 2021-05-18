@@ -1,0 +1,10 @@
+".source.tf":
+  "Create an AWS Network Interface":
+    "prefix": "aws_network_interface"
+    "body": """
+  resource "aws_network_interface" "${1}" {
+    subnet_id       = ${2}  
+    private_ips     = ["${3}"]
+    security_groups = [${4}]
+  }${5}
+"""
